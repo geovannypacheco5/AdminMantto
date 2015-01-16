@@ -1,2 +1,2 @@
 # AdminMantto
-administracion de mantenimiento
+administracion de mantenimiento a equipos
