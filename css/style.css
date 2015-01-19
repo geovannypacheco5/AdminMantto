@@ -34,25 +34,11 @@ header nav ul li
     list-style: outside none none;
     display: inline;
     float: right;
-    padding: 5px 20px;
+    padding: 5px 16px;
     background-color: #FFF;
     border-radius: 5px 5px 0px 0px;
     margin: 0px 10px;
     cursor:pointer;
-}
-header ul li:active
-{
-    background-color: #FFF;
-}
-.dos
-{
-    background-color: #CCC;
-}
-header ul li a
-{
-    text-decoration: none;
-    color:black;
-    display:inline-block;
 }
 #login
 {
@@ -90,4 +76,46 @@ header ul li a
 #login_enviar
 {
     float: right;
+}
+#entrada
+{
+    width: 950px;
+    height: 448px;
+    border: 4px solid;
+    margin: 0px auto;
+}
+#form_cliente
+{
+    margin:20px 0px 0px 130px;
+    font-size:12px;
+}
+#form_cliente legend
+{
+    font-size:16px;
+}
+#form_cliente table
+{
+    margin: 0px auto auto 30px;
+}
+#form_cliente td
+{
+    padding-right: 10px;
+}
+#fieldset_cliente
+{
+    width: 320px;
+}
+fieldset
+{
+    border:4px double #00AECC;
+}
+.columnas
+{
+    float:left;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.comercial
+{
+    display: none;
 }
