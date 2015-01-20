@@ -1,5 +1,5 @@
 <?php
-    $lol = $_GET['action'];
+$action = filter_input(INPUT_GET, 'action', FILTER_SANITIZE_SPECIAL_CHARS);
 ?>
 <!DOCTYPE HTML>
 
@@ -9,19 +9,39 @@
         <?php require_once 'web/layout/header.php';?>
         <article>
             <?php
-                switch($lol)
+                switch($action)
                 {
                     case "inicio":
                         require_once 'web/layout/inicio.php';
+                        echo "<script>"
+                        . "document.getElementsByClassName('menu')[0]"
+                        . ".style='background-color:#CCC';"
+                        . "document.getElementsByClassName('menu')[1]"
+                        . ".style='background-color:#CCC';</script>";
                         break;
                     case "entrada":
-                        require_once 'web/layout/entrada.php';                        
+                        require_once 'web/layout/entrada.php';
+                        echo "<script>"
+                        . "document.getElementsByClassName('menu')[0]"
+                        . ".style='background-color:#CCC';"
+                        . "document.getElementsByClassName('menu')[2]"
+                        . ".style='background-color:#CCC';</script>";
                         break;
                     case "salida":
-                        require_once 'web/layout/salida.php';                        
+                        require_once 'web/layout/salida.php';
+                        echo "<script>"
+                        . "document.getElementsByClassName('menu')[1]"
+                        . ".style='background-color:#CCC';"
+                        . "document.getElementsByClassName('menu')[2]"
+                        . ".style='background-color:#CCC';</script>";
                         break;
                     default:
-                        
+                        require_once 'web/layout/inicio.php';
+                        echo "<script>"
+                        . "document.getElementsByClassName('menu')[0]"
+                        . ".style='background-color:#CCC';"
+                        . "document.getElementsByClassName('menu')[1]"
+                        . ".style='background-color:#CCC';</script>";
                         break;
                 }
             ?>
