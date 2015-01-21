@@ -15,33 +15,33 @@ $action = filter_input(INPUT_GET, 'action', FILTER_SANITIZE_SPECIAL_CHARS);
                         require_once 'web/layout/inicio.php';
                         echo "<script>"
                         . "document.getElementsByClassName('menu')[0]"
-                        . ".style='background-color:#CCC';"
+                        . ".style.backgroundColor='#CCC';"
                         . "document.getElementsByClassName('menu')[1]"
-                        . ".style='background-color:#CCC';</script>";
+                        . ".style.backgroundColor='#CCC';</script>";
                         break;
                     case "entrada":
                         require_once 'web/layout/entrada.php';
                         echo "<script>"
                         . "document.getElementsByClassName('menu')[0]"
-                        . ".style='background-color:#CCC';"
+                        . ".style.backgroundColor='#CCC';"
                         . "document.getElementsByClassName('menu')[2]"
-                        . ".style='background-color:#CCC';</script>";
+                        . ".style.backgroundColor='#CCC';</script>";
                         break;
                     case "salida":
                         require_once 'web/layout/salida.php';
                         echo "<script>"
                         . "document.getElementsByClassName('menu')[1]"
-                        . ".style='background-color:#CCC';"
+                        . ".style.backgroundColor='#CCC';"
                         . "document.getElementsByClassName('menu')[2]"
-                        . ".style='background-color:#CCC';</script>";
+                        . ".style.backgroundColor='#CCC';</script>";
                         break;
                     default:
                         require_once 'web/layout/inicio.php';
                         echo "<script>"
                         . "document.getElementsByClassName('menu')[0]"
-                        . ".style='background-color:#CCC';"
+                        . ".style.backgroundColor='#CCC';"
                         . "document.getElementsByClassName('menu')[1]"
-                        . ".style='background-color:#CCC';</script>";
+                        . ".style.backgroundColor='#CCC';</script>";
                         break;
                 }
             ?>
